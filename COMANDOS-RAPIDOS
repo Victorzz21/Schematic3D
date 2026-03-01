@@ -1,0 +1,82 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    SCHEMATIC3D MOBILE - GUÍA RÁPIDA                          ║
+║                         Versión 2.0.1                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+COMANDOS BÁSICOS
+═══════════════════════════════════════════════════════════════════════════════
+  help, ?              Muestra la ayuda completa
+  list                 Lista todos los componentes del modelo actual
+  list [tipo]          Lista componentes por tipo (cpu, gpu, ram, etc.)
+  select [id]          Selecciona un componente para ver sus detalles
+  info [id]            Muestra información detallada de un componente
+
+COMANDOS DE VISUALIZACIÓN 3D
+═══════════════════════════════════════════════════════════════════════════════
+  connections          Activa/desactiva las líneas de conexión
+  trace [id]           Traza todas las líneas conectadas a un componente
+  reset                Resetea la vista 3D a su estado inicial
+
+COMANDOS DE MODELOS
+═══════════════════════════════════════════════════════════════════════════════
+  phones               Lista todos los modelos de celulares disponibles
+  load [id]            Carga un modelo específico
+  
+  IDs disponibles:
+  • iphone-15-pro      iPhone 15 Pro (Apple, 2023)
+  • samsung-s24-ultra  Galaxy S24 Ultra (Samsung, 2024)
+  • pixel-8-pro        Pixel 8 Pro (Google, 2023)
+
+COMANDOS DE BÚSQUEDA Y EXPORTACIÓN
+═══════════════════════════════════════════════════════════════════════════════
+  search [texto]       Busca componentes por nombre, tipo o descripción
+  export               Exporta el esquemático actual a archivo JSON
+  clear                Limpia la terminal
+  exit                 Cierra la aplicación
+
+TIPOS DE COMPONENTES
+═══════════════════════════════════════════════════════════════════════════════
+  cpu         Procesador principal
+  gpu         Unidad de procesamiento gráfico
+  ram         Memoria RAM
+  storage     Almacenamiento interno (NAND/UFS)
+  battery     Batería
+  camera      Cámaras (principal, ultra-wide, telefoto)
+  display     Pantalla
+  connector   Puertos (USB-C, etc.)
+  sensor      Sensores (LiDAR, temperatura, etc.)
+  antenna     Módulos de conectividad (5G, WiFi, Bluetooth)
+
+EJEMPLOS DE USO
+═══════════════════════════════════════════════════════════════════════════════
+  > list cpu                    Muestra todos los CPUs
+  > select a17-pro              Selecciona el chip A17 Pro
+  > trace battery-3274          Traza conexiones desde la batería
+  > load samsung-s24-ultra      Carga el Galaxy S24 Ultra
+  > search camera               Busca todas las cámaras
+  > info main-camera            Muestra info de la cámara principal
+
+COLORES DE CONEXIONES
+═══════════════════════════════════════════════════════════════════════════════
+  🔴 Rojo (#ff4444)    Conexiones de energía (power)
+  🔵 Azul (#4444ff)    Conexiones de datos (data)
+  🟢 Verde (#44ff44)   Conexiones de señal (signal)
+
+CONTROLES DEL MOUSE (Vista 3D)
+═══════════════════════════════════════════════════════════════════════════════
+  🖱️ Click izquierdo + arrastrar    Rotar la vista
+  📜 Scroll                           Zoom in/out
+  👆 Click en componente              Seleccionar componente
+  🖱️ Click derecho + arrastrar        Paneo (mover la vista)
+
+ATAJOS DE TECLADO EN TERMINAL
+═══════════════════════════════════════════════════════════════════════════════
+  ↑ (Flecha arriba)      Historial de comandos anterior
+  ↓ (Flecha abajo)       Historial de comandos siguiente
+  Tab                    Autocompletar comando
+  Ctrl+C                 Copiar selección
+  Ctrl+V                 Pegar
+
+═══════════════════════════════════════════════════════════════════════════════
+Para más información, visita: https://github.com/schematic3d/mobile
+═══════════════════════════════════════════════════════════════════════════════

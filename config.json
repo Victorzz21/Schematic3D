@@ -1,0 +1,68 @@
+{
+  "name": "Schematic3D Mobile",
+  "version": "2.0.1",
+  "description": "Sistema de Esquemáticos 3D para Celulares",
+  "server": {
+    "port": 3000,
+    "host": "localhost",
+    "autoOpenBrowser": true
+  },
+  "display": {
+    "theme": "powershell",
+    "colors": {
+      "background": "#0a0a0a",
+      "foreground": "#00ff00",
+      "accent": "#00aa00",
+      "error": "#ff4444",
+      "warning": "#ffaa00",
+      "info": "#00aaff"
+    }
+  },
+  "threejs": {
+    "camera": {
+      "fov": 50,
+      "position": [0, 0, 25],
+      "near": 0.1,
+      "far": 1000
+    },
+    "controls": {
+      "enablePan": true,
+      "enableZoom": true,
+      "enableRotate": true,
+      "minDistance": 5,
+      "maxDistance": 50
+    }
+  },
+  "components": {
+    "showLabels": true,
+    "labelDistance": 10,
+    "selectionPulse": true,
+    "connectionLines": {
+      "enabled": true,
+      "colors": {
+        "power": "#ff4444",
+        "data": "#4444ff",
+        "signal": "#44ff44",
+        "default": "#888888"
+      },
+      "opacity": {
+        "active": 0.8,
+        "inactive": 0.2
+      }
+    }
+  },
+  "terminal": {
+    "maxHistory": 100,
+    "showTimestamp": true,
+    "autoComplete": true,
+    "welcomeMessage": true
+  },
+  "models": {
+    "default": "iphone-15-pro",
+    "available": [
+      "iphone-15-pro",
+      "samsung-s24-ultra",
+      "pixel-8-pro"
+    ]
+  }
+}
